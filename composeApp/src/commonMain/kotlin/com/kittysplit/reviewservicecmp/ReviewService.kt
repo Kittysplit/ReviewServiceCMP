@@ -11,5 +11,7 @@ sealed class ReviewResult() {
 }
 
 interface ReviewService {
-    suspend fun requestInAppReview(activityContainer: ActivityContainer = EmptyActivityContainer): ReviewResult
+    suspend fun requestInAppReview(
+        activityContainer: ActivityContainer = EmptyActivityContainer
+    ): ReviewResult
 }

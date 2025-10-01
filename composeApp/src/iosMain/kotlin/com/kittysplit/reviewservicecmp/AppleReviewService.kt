@@ -17,7 +17,7 @@ class AppleReviewService : ReviewService {
             SKStoreReviewController.requestReview()
         }
         ReviewResult.Requested
-    } catch (e: Exception) {
+    } catch (_: Exception) {
         ReviewResult.Failed
     }
 }
